@@ -3,7 +3,7 @@
 
   "name": "JIRA Ticket Values",
   "description": "This extension will show the number of points in a JIRA swim-lane",
-  "version": "1.16",
+  "version": "1.17",
 
   "permissions": [
     "https://*.atlassian.net/"
