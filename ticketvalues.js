@@ -1,6 +1,7 @@
 var existingTimeout = null;
 
 $(document).ready(setTimeout(function() {
+	displayPointsHeader();
 
 	$('#js-work-quickfilters a').on('click', function() {
 		if (existingTimeout != null) {
