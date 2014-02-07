@@ -16,6 +16,7 @@ $(document).ready(setTimeout(function() {
 function displayPointsHeader() {
 	existingTimeout = null;
 	var headers = $('.ghx-column').not('.ui-sortable');
+	headers.each(function(idx,val){$(val).find('h2').css('display','inline')});
 	var swimlanes = $('.ghx-column.ui-sortable');
 	swimlanes.each(function(idx, val) {
 		var sum = 0;
