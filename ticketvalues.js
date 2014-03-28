@@ -15,8 +15,8 @@ $(document).ready(setTimeout(function() {
 
 function displayPointsHeader() {
 	existingTimeout = null;
-	var headers = $('.ghx-column').not('.ui-sortable');
-	var swimlanes = $('.ghx-column.ui-sortable');
+	var headers = $('.ghx-column-headers .ghx-column');
+	var swimlanes = $('.ghx-swimlane .ghx-column');
 	swimlanes.each(function(idx, val) {
 		var sum = 0;
 		$(val).find('div.ghx-issue .ghx-corner .aui-badge').each(function(idx, val) {
