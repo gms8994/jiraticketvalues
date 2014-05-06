@@ -25,6 +25,6 @@ function displayPointsHeader() {
 			}
 		});
 
-		$(headers[idx]).prepend('<div class="ghx-end" style="float:right;"><div class="ghx-corner"><span class="aui-badge" title="Total Story Points">' + sum + '</span></div></div>');
+		$(headers[idx]).prepend('<div class="ghx-end" style="float:right;"><div class="ghx-corner"><span class="aui-badge" title="Total Story Points">' + sum + '</span></div></div>').find('h2').css('display', 'inline');
 	});
 }
