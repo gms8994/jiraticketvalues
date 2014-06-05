@@ -31,5 +31,9 @@ function displayPointsHeader() {
 	});
 
 	var selector = $('.js-quickfilter-button.ghx-active');
-	selector.text(selector.text() + ' (' + overallSum + ')');
+	if (selector.find('.points').length == 0) {
+		selector.append(' (<span class="points">' + overallSum + '</span>)');
+	} else {
+		selector.find('.points').text(overallSum);
+	}
 }
